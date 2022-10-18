@@ -25,7 +25,7 @@ public class MainExtra4 {
         NifService ns = new NifService();
         
         ns.crearNif();
-        ns.mostrar();
+        ns.mostrarNif();
     }
     
 }

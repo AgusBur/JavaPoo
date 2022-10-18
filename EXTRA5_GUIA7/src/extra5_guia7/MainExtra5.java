@@ -11,9 +11,31 @@ No ha acertado. Intente adivinarlo introduciendo otro mes: agosto
  */
 package extra5_guia7;
 
+import java.util.Scanner;
+
 public class MainExtra5 {
 
     public static void main(String[] args) {
+       
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+        String vec[]= new String[13];
+        
+        vec[0]="enero";vec[1]="febrero";vec[2]="marzo";
+        vec[3]="abril";vec[4]="mayo";vec[5]="junio";
+        vec[6]="julio";vec[7]="agosto";vec[8]="septiembre";
+        vec[9]="octubre";vec[10]="noviembre";vec[11]="diciembre";
+        
+        String secretMonth = vec[9];
+        
+        String month = "";
+        System.out.println("Adivine un mes. Ingrese uno: ");
+        month = leer.next();
+        while (month.equalsIgnoreCase(secretMonth)==false) {            
+        System.out.println("No es ese, ingrese otro..");
+        month = leer.next();  
+        }
+        System.out.println("Correcto!!");
+        System.out.println("El mes secreto era: "+secretMonth);
         
     }
     
