@@ -16,65 +16,19 @@ public class Ahorcado {
     private int missingLetters;
     private String vec[];
     private String vec2[];
+    private String vecLetters[];
     private int opportunities;
 
     public Ahorcado() {
     }
 
-    public Ahorcado(int lettersFound, int missingLetters, String[] vec, String[] vec2, int opportunities) {
+    public Ahorcado(int lettersFound, int missingLetters, String[] vec, String[] vec2, String[] vecLetters, int opportunities) {
         this.lettersFound = lettersFound;
         this.missingLetters = missingLetters;
         this.vec = vec;
         this.vec2 = vec2;
+        this.vecLetters = vecLetters;
         this.opportunities = opportunities;
-    }
-
-    public int getLettersFound() {
-        return lettersFound;
-    }
-
-    public void setLettersFound(int lettersFound) {
-        this.lettersFound = lettersFound;
-    }
-
-    public int getMissingLetters() {
-        return missingLetters;
-    }
-
-    public void setMissingLetters(int missingLetters) {
-        this.missingLetters = missingLetters;
-    }
-
-    public String[] getVec() {
-        return vec;
-    }
-
-    public void setVec(String[] vec) {
-        this.vec = vec;
-    }
-
-    public String[] getVec2() {
-        return vec2;
-    }
-
-    public void setVec2(String[] vec2) {
-        this.vec2 = vec2;
-    }
-
-    public int getOpportunities() {
-        return opportunities;
-    }
-
-    public void setOpportunities(int opportunities) {
-        this.opportunities = opportunities;
-    }
-
-    public Scanner getLeer() {
-        return leer;
-    }
-
-    public void setLeer(Scanner leer) {
-        this.leer = leer;
     }
 
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
@@ -91,7 +45,9 @@ public class Ahorcado {
         int large = word.length();
         vec= new String[large];
         vec2 = new String[vec.length];
+        vecLetters= new String [vec.length];
         Arrays.fill(vec2,"_");
+        Arrays.fill(vecLetters," ");
         
         for (int i = 0; i <large; i++) {
               vec[i]=word.substring(i, i+1);
@@ -100,9 +56,6 @@ public class Ahorcado {
         lettersFound=0;
     }
     
-    private void limpiarPantalla() {
-        
-    }
     
     private void verLongitud() {
         System.out.println("La palabra secreta tiene:  "+vec.length+" letras");
@@ -111,7 +64,7 @@ public class Ahorcado {
     private boolean comprobarLetra(String letter) {
         boolean ret=false;
         for (int i = 0; i <vec.length; i++) {
-            if (vec2[i].equalsIgnoreCase(letter)) {
+            if (vec2[i].equalsIgnoreCase(letter)|| (vecLetters[i].equalsIgnoreCase(letter))) {
                 ret=true;
                 break;
             } else {
@@ -119,7 +72,7 @@ public class Ahorcado {
             }
         }
         if (ret) {
-            System.out.println("Ya ingresaste esa letra!");
+            System.out.println("Oops ya ingresaste esa letra!");
         } else {
             System.out.println("Buscando letra....");
         }
@@ -131,6 +84,15 @@ public class Ahorcado {
         for (int i = 0; i <vec.length; i++) {
             if (vec[i].equalsIgnoreCase(letter)) {
                count++;
+            }
+        }
+        for (int i = 0; i < vec.length; i++) {
+            if (i==0 && vecLetters[i].equalsIgnoreCase(" ")) {
+                vecLetters[i]=letter;
+                break;
+            } else if (vecLetters[i].equalsIgnoreCase(" ")){
+                vecLetters[i]=letter;
+                break;
             }
         }
         if (count!=0) {
@@ -172,7 +134,6 @@ public class Ahorcado {
         for (int i = 0; i < vec.length; i++) {
             System.out.print(" "+vec2[i]+" ");
         }
-   
     }
     
     private void verIntentos() {
@@ -205,12 +166,10 @@ public class Ahorcado {
             }
             buscar(letter);
             verEncontradas(letter);
-            if (opportunities!=1) {
-                verPalabra(letter);
-                System.out.println("");
-                System.out.println("-Letras encontradas: "+lettersFound);
-                System.out.println("-Letras que faltan: "+missingLetters);
-            }
+            verPalabra(letter);
+            System.out.println("");
+            System.out.println("-Letras encontradas: "+lettersFound);
+            System.out.println("-Letras que faltan: "+missingLetters);
             verIntentos();
         } while (opportunities>=1 && missingLetters!=0);
         
