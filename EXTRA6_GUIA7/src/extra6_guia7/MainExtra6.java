@@ -34,7 +34,6 @@ public class MainExtra6 {
     public static void main(String[] args) {
        
         Ahorcado g1 = new Ahorcado();
-        
         g1.jugarAhorcado();
     }
     
