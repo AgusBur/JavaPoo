@@ -13,7 +13,7 @@ Antes de calcular la raíz cuadrada se debe obtener el valor absoluto del númer
 package ejerc9_guia7;
 
 import ejerc9_guia7.entidad.Matematica;
-import ejerc9_guia7.servicio.Metodos;
+import ejerc9_guia7.service.MatematicaService;
 import java.util.Scanner;
 
 public class Main9 {
@@ -21,7 +21,7 @@ public class Main9 {
     public static void main(String[] args) {
         
         Scanner leer = new Scanner(System.in);
-        Metodos op = new Metodos();
+        MatematicaService op = new MatematicaService();
         Matematica num1 = new Matematica();
         int opc;
         double n1 = (Math.random() * 5 + 1);

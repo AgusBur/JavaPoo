@@ -17,7 +17,7 @@ informa al usuario. Si no, se hace la división y se devuelve el resultado al ma
  */
 package ejerc3_guia7;
 
-import ejerc3_guia7.clases.Operacion;
+import ejerc3_guia7.entidad.Operacion;
 
 public class Main3 {
 

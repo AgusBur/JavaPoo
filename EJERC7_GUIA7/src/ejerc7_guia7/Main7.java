@@ -31,13 +31,13 @@ también calcularemos un porcentaje de cuantos son mayores de edad y cuantos men
 package ejerc7_guia7;
 
 import ejerc7_guia7.entidad.Persona;
-import ejerc7_guia7.servicio.Metodo;
+import ejerc7_guia7.servicio.PersonaService;
 
 public class Main7 {
 
     public static void main(String[] args) {
        
-        Metodo salud = new Metodo();
+        PersonaService salud = new PersonaService();
         Persona p = new Persona();
         int bajop=0, pesoIdeal=0,sobrep=0,mayor=0,menor=0;
         

@@ -15,14 +15,14 @@ h) Método contiene(String letra)
 package ejerc8_guia7;
 
 import ejerc8_guia7.entidad.Cadena;
-import ejerc8_guia7.servicio.Metodo;
+import ejerc8_guia7.servicio.CadenaService;
 import java.util.Scanner;
 
 public class Main8 {
 
     public static void main(String[] args) {
 
-        Metodo frases = new Metodo();
+        CadenaService frases = new CadenaService();
         Scanner leer = new Scanner(System.in).useDelimiter("\n");
         Cadena fra1 = new Cadena();
         String frase;

@@ -15,7 +15,7 @@ usuario no saque más del 20%.
 g) Método consultarSaldo(): permitirá consultar el saldo disponible en la cuenta.
 h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
  */
-package ejerc5_guia7.clase;
+package ejerc5_guia7.entidad;
 
 import java.util.Scanner;
 

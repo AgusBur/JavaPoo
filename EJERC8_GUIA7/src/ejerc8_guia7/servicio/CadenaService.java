@@ -27,7 +27,7 @@ package ejerc8_guia7.servicio;
 import ejerc8_guia7.entidad.Cadena;
 import java.util.Scanner;
 
-public class Metodo {
+public class CadenaService {
     
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     Cadena frase1 = new Cadena();

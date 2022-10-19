@@ -17,7 +17,7 @@ recibe y se añade a la cafetera la cantidad de café indicada.
  */
 package ejerc6_guia7;
 
-import ejerc6_guia7.servicio.Metodo;
+import ejerc6_guia7.service.CafeteraService;
 import java.util.Scanner;
 
 
@@ -26,7 +26,7 @@ public class Main6 {
     public static void main(String[] args) {
         
         Scanner leer = new Scanner(System.in);
-        Metodo cafetera = new Metodo();
+        CafeteraService cafetera = new CafeteraService();
         int opc;
         
         do {            

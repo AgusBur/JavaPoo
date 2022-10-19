@@ -15,7 +15,7 @@ h) Método dividir(): primero valida que no se haga una división por cero, si f
 una división por cero, el método devuelve 0 y se le informa al usuario el error se le
 informa al usuario. Si no, se hace la división y se devuelve el resultado al main.
  */
-package ejerc3_guia7.clases;
+package ejerc3_guia7.entidad;
 
 // @author Agustina
 

@@ -7,7 +7,7 @@ actual de café que hay en la cafetera). Implemente, al menos, los siguientes m�
 • Métodos getters y setters.
 
  */
-package ejerc6_guia7.clase;
+package ejerc6_guia7.entidad;
 
 public class Cafetera {
     

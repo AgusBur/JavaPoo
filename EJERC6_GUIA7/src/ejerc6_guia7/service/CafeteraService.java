@@ -9,12 +9,12 @@ cuanto quedó la taza.
 • Método agregarCafe(int): se le pide al usuario una cantidad de café, el método lo
 recibe y se añade a la cafetera la cantidad de café indicada.
  */
-package ejerc6_guia7.servicio;
+package ejerc6_guia7.service;
 
-import ejerc6_guia7.clase.Cafetera;
+import ejerc6_guia7.entidad.Cafetera;
 import java.util.Scanner;
 
-public class Metodo {
+public class CafeteraService {
     
     Scanner leer = new Scanner(System.in);
     Cafetera caf1 = new Cafetera();

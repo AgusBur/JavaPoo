@@ -12,7 +12,7 @@ package ejerc4_guia7;
 
 // @author Agustina
 
-import ejerc4_guia7.clase.Rectangulo;
+import ejerc4_guia7.entidad.Rectangulo;
 
 
 public class Main4 {

@@ -8,7 +8,7 @@ altura. Se deberán además definir los métodos getters, setters y constructore
 correspondientes.
 Superficie = base * altura / Perímetro = (base + altura) * 2.
  */
-package ejerc4_guia7.clase;
+package ejerc4_guia7.entidad;
 
 // @author Agustina
 

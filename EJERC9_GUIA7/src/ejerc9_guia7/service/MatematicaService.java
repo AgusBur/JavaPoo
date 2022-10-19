@@ -8,12 +8,12 @@ al menor número. Previamente se deben redondear ambos valores.
 c) Método calculaRaiz(), para calcular la raíz cuadrada del menor de los dos valores.
 Antes de calcular la raíz cuadrada se debe obtener el valor absoluto del número.
  */
-package ejerc9_guia7.servicio;
+package ejerc9_guia7.service;
 
 import ejerc9_guia7.entidad.Matematica;
 import java.util.Scanner;
 
-public class Metodos {
+public class MatematicaService {
     
     Scanner leer = new Scanner(System.in);
     Matematica n1 = new Matematica();

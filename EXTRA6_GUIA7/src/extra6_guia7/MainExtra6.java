@@ -23,13 +23,19 @@ previamente mencionados e informará cuando el usuario descubra toda la palabra 
 se quede sin intentos. Este método se llamará en el main.
  */
 package extra6_guia7;
+
+import extra6_guia7.entidad.Ahorcado;
+
 /**
  * @author Agustina
  */
-public class EXTRA6_GUIA7 {
+public class MainExtra6 {
 
     public static void main(String[] args) {
        
+        Ahorcado g1 = new Ahorcado();
+        
+        g1.jugarAhorcado();
     }
     
 }

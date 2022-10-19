@@ -27,7 +27,7 @@ package ejerc7_guia7.servicio;
 import ejerc7_guia7.entidad.Persona;
 import java.util.Scanner;
 
-public class Metodo {
+public class PersonaService {
     
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     Persona p1 = new Persona();

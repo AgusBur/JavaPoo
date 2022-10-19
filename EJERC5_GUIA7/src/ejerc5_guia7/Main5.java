@@ -17,7 +17,7 @@ h) Método consultarDatos(): permitirá mostrar todos los datos de la cuenta
  */
 package ejerc5_guia7;
 
-import ejerc5_guia7.clase.Cuenta;
+import ejerc5_guia7.entidad.Cuenta;
 import java.util.Scanner;
 
 public class Main5 {
