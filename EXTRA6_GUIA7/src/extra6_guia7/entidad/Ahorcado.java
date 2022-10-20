@@ -148,8 +148,9 @@ public class Ahorcado {
     
     public void jugarAhorcado() {
         crearJuego();
-        System.out.println("");
-        System.out.println("");
+        for (int i = 0; i < 30; i++) {
+            System.out.println("");
+        }
         System.out.println("Juguemos al ahorcadito!!");
         System.out.println("=============================================");
         verLongitud();
